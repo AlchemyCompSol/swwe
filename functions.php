@@ -281,3 +281,44 @@ function starkers_posted_in() {
 	);
 }
 endif;
+
+/* Register Custom Post Type: Datacards */
+
+    add_action( 'init', 'register_cpt_edu' );
+    function register_cpt_edu() {
+    $labels = array(
+    'name' => _x( 'Educational Material', 'edu' ),
+    'singular_name' => _x( 'Educational Material', 'edu' ),
+    'add_new' => _x( 'Add New', 'edu' ),
+    'add_new_item' => _x( 'Add New Educational Material', 'edu' ),
+    'edit_item' => _x( 'Edit Educational Material', 'edu' ),
+    'new_item' => _x( 'New Educational Material', 'edu' ),
+    'view_item' => _x( 'View Educational Material', 'edu' ),
+    'search_items' => _x( 'Search Educational Material', 'edu' ),
+    'not_found' => _x( 'No Educational Material found', 'edu' ),
+    'not_found_in_trash' => _x( 'No Educational Material found in Trash', 'edu' ),
+    'menu_name' => _x( 'Educational Material', 'edu' ),
+    );
+    $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+    'description' => 'Educational Material',
+    'supports' => array( 'title', 'editor', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'revisions' ),
+    'taxonomies' => array( 'category' ),
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'menu_position' => 10,
+    'show_in_nav_menus' => false,
+    'publicly_queryable' => true,
+    'exclude_from_search' => false,
+    'has_archive' => true,
+    'query_var' => true,
+    'can_export' => true,
+    'rewrite' => true,
+    'capability_type' => 'page'
+    );
+    register_post_type( 'edu', $args );
+    }
+
+/* all args here: http://codex.wordpress.org/Function_Reference/register_post_type  */

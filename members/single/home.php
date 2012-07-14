@@ -1,15 +1,5 @@
-<?php
-
-/**
- * BuddyPress - Users Home
- *
- * @package BuddyPress
- * @subpackage bp-default
- */
-
-?>
-
-<?php get_header( 'buddypress' ); ?>
+<?php get_header(); ?>
+<div id="content">
 
 	<div id="content">
 		<div class="padder">
@@ -77,5 +67,6 @@
 		</div><!-- .padder -->
 	</div><!-- #content -->
 
-<?php get_sidebar( 'buddypress' ); ?>
-<?php get_footer( 'buddypress' ); ?>
+</div><!-- #content -->
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

@@ -1,13 +1,5 @@
-<?php
-/**
- * The template for displaying Search Results pages.
- *
- * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
- */
-
-get_header(); ?>
+<?php get_header(); ?>
+<div id="content">
 
 <?php if ( have_posts() ) : ?>
 		<h1><?php printf( __( 'Search Results for: %s', 'starkers' ), '' . get_search_query() . '' ); ?></h1>
@@ -20,5 +12,6 @@ get_header(); ?>
 			<?php get_search_form(); ?>
 <?php endif; ?>
 
+</div><!-- #content -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

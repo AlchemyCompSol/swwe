@@ -1,13 +1,5 @@
-<?php
-/**
- * The template for displaying Author Archive pages.
- *
- * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
- */
- 
-get_header(); ?>
+<?php get_header(); ?>
+<div id="content">
  
 <?php
     if ( have_posts() )
@@ -30,5 +22,6 @@ if ( get_the_author_meta( 'description' ) ) : ?>
     get_template_part( 'loop', 'author' );
 ?>
  
+</div><!-- #content -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -1,15 +1,5 @@
-<?php
-
-/**
- * BuddyPress - Members Directory
- *
- * @package BuddyPress
- * @subpackage bp-default
- */
-
-?>
-
-<?php get_header( 'buddypress' ); ?>
+<?php get_header(); ?>
+<div id="content">
 
 	<?php do_action( 'bp_before_directory_members_page' ); ?>
 
@@ -91,5 +81,6 @@
 
 	<?php do_action( 'bp_after_directory_members_page' ); ?>
 
-<?php get_sidebar( 'buddypress' ); ?>
-<?php get_footer( 'buddypress' ); ?>
+</div><!-- #content -->
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

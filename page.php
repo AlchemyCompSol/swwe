@@ -1,13 +1,5 @@
-<?php
-/**
- * The template for displaying all pages.
- *
- * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
- */
-
-get_header(); ?>
+<?php get_header(); ?>
+<div id="content">
 
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -33,5 +25,6 @@ get_header(); ?>
 
 	<?php endwhile; ?>
 
+</div><!-- #content -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

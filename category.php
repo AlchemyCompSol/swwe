@@ -1,13 +1,5 @@
-<?php
-/**
- * The template for displaying Category Archive pages.
- *
- * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
- */
-
-get_header(); ?>
+<?php get_header(); ?>
+<div id="content">
 
 				<h1><?php
 					printf( __( 'Category Archives: %s', 'starkers' ), '' . single_cat_title( '', false ) . '' );
@@ -20,5 +12,6 @@ get_header(); ?>
 				get_template_part( 'loop', 'category' );
 				?>
 
+</div><!-- #content -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
