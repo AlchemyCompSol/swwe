@@ -309,7 +309,7 @@ endif;
     'show_ui' => true,
     'show_in_menu' => true,
     'menu_position' => 10,
-    'show_in_nav_menus' => false,
+    'show_in_nav_menus' => true,
     'publicly_queryable' => true,
     'exclude_from_search' => false,
     'has_archive' => true,

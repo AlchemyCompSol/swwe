@@ -11,16 +11,42 @@ Author URI: http://alchemycs.com
 @import "editor-style.css";
 
 
+
+/* GENERAL  */
+/* ----------------------------------------- */
+
+#top,
+#container,
+#bottom {
+width: 1000px;
+margin: 0 auto;
+clear: both;
+}
+
+#content {
+width: 750px;
+float: left;
+}
+
+#sidebar {
+width: 250px;
+float: right;
+}
+
+
+
 /* HEADER */
 /* ----------------------------------------- */
 
-trying to break it
+
 
 
 /* NAVIGATION */
 /* ----------------------------------------- */
 
-
+nav li {
+display: inline;
+}
 
 
 
