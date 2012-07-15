@@ -30,7 +30,9 @@ background: url('http://theclementinegroup.com/wp-content/themes/swwe/images/bac
 width: 1000px;
 margin: 0 auto;
 background: #fff;
-padding: 40px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.4);
 }
 
 #content {
@@ -96,16 +98,19 @@ height: 35px;
 line-height: 35px;
 border: 1px solid #04cecc;
 position: relative;
+-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.4);
+}
+
+#top #nav-wrapper {
+width: 960px;
+margin: 0 auto;
+position: relative;
 }
 
 nav li {
 display: inline;
 padding-right: 20px;
-}
-
-nav ul {
-width: 960px;
-margin: 0 auto;
 }
 
 nav a {
@@ -116,11 +121,10 @@ text-transform: uppercase;
 }
 
 nav .menu-secondary-nav-container {
-width: 960px;
-margin: 0 auto;
-text-align: right;
-position: relative;
-top: -35px;
+width: 200px;
+position: absolute;
+top: 0px;
+right: -70px;
 }
 
 
@@ -135,9 +139,135 @@ top: -35px;
 /* HOME PAGE */
 /* ----------------------------------------- */
 
+.home #content {
+width: 1000px;
+}
 
+#want {
+background: #ea8023;
+height: 330px;
+position: relative;
+}
 
+#want h2 {
+color: #fff;
+font-size: 45px;
+font-weight: normal;
+position: relative;
+top: 50px;
+left: 220px;
+}
 
+#want .homebutton {
+width: 310px;
+height: 158px;
+position: absolute;
+top: 110px;
+background: #fff;
+background-repeat: no-repeat;
+color: #ea8023;
+padding: 50px 0 0 20px;
+border: 3px solid #902927;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+-webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
+box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
+}
+
+#want .homebutton p {
+font-size: 28px;
+}
+
+#want .homebutton .big {
+display: block;
+font-size: 50px;
+line-height: 50px;
+}
+
+#want #start {
+left: 25px;
+background-image: url('http://theclementinegroup.com/wp-content/themes/swwe/images/start.png');
+background-position: 250px 10px;
+}
+
+#want #drive {
+left: 345px;
+background-image: url('http://theclementinegroup.com/wp-content/themes/swwe/images/drive.png');
+background-position: 170px 10px;
+}
+
+#want #connect {
+right: 25px;
+background-image: url('http://theclementinegroup.com/wp-content/themes/swwe/images/connect.png');
+background-position: 230px 10px;
+}
+
+#twocolumns {
+border-top: 2px dotted #c0ecd8;
+margin-top: -1px;
+}
+
+#twocolumns .column {
+width: 50%;
+float: left;
+height: 270px;
+}
+
+#twocolumns #event h3 {
+font-weight: normal;
+font-size: 24px;
+color: #737a77;
+padding-top: 30px;
+padding-left: 20px;
+}
+
+#twocolumns #event {
+background: url('http://theclementinegroup.com/wp-content/themes/swwe/images/eventsmap.jpg') no-repeat bottom center;
+}
+
+#twocolumns #join {
+border-left: 1px solid #b9bcbb;
+margin: 20px 0;
+padding: 0 20px;
+color: #737a77;
+}
+
+#twocolumns #join h3 {
+font-size: 28px;
+font-weight: normal;
+color: #902927;
+margin-bottom: 20px;
+}
+
+#join .field {
+background: #e3e4e4;
+border: none;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+width: 350px;
+height: 45px;
+padding-left: 20px;
+color: #737a77;
+font-weight: bold;
+font-family: 'Trebuchet MS',  Trebuchet, Helvetica, sans-serif;
+margin: 10px 0;
+}
+
+#join .button {
+height: 45px;
+width: 135px;
+background: #ea8023;
+border: none;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+color: #fff;
+font-weight: bold;
+font-family: 'Trebuchet MS',  Trebuchet, Helvetica, sans-serif;
+font-size: 16px;
+}
 
 /* BLOG */
 /* ----------------------------------------- */
@@ -153,4 +283,47 @@ top: -35px;
 clear: both;
 width: 1000px;
 margin: 0 auto;
+color: #737a77;
+background: #fff;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.4);
+text-align: center;
+}
+
+#bottom #sponsors div {
+display: inline;
+margin: 0 10px;
+}
+
+#bottom #sponsors h4 {
+background: #ea8023;
+color: #fff;
+text-align: left;
+margin: 0 10px 20px 10px;
+padding: 3px 5px 3px 20px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+position: relative;
+}
+
+#bottom #sponsors h4:after {
+content: '';
+width: 0; 
+height: 0; 
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-top: 10px solid #ea8023;
+position: absolute;
+bottom: -10px;
+left: 45px;
+}
+
+#bottom .copyright {
+text-align: right;
+position: relative;
+top: 24px;
 }

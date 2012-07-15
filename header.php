@@ -30,8 +30,10 @@
         </hgroup>
         
         <nav>
-            <?php wp_nav_menu( array( 'container' => 'div', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'primary' ) ); ?>
-            <?php wp_nav_menu( array( 'container' => 'div', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'secondary' ) ); ?>
+            <div id="nav-wrapper">
+                <?php wp_nav_menu( array( 'container' => 'div', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'primary' ) ); ?>
+                <?php wp_nav_menu( array( 'container' => 'div', 'fallback_cb' => 'starkers_menu', 'theme_location' => 'secondary' ) ); ?>
+            </div>
         </nav>
     </header>
 
