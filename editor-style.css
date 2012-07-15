@@ -45,6 +45,7 @@ text-decoration: none;
 }
 
 a:hover {
+color: #902927;
 
 }
 
@@ -68,9 +69,13 @@ text-decoration: none;
 }
 
 blockquote {
-font-size: 24px;
 padding: 0 3em;
 background: url('http://theclementinegroup.com/wp-content/themes/swwe/images/quotes.png') no-repeat top center;
+}
+
+blockquote p {
+font-size: 24px;
+line-height: 36px;
 }
 
 ul li {
@@ -84,6 +89,37 @@ list-style-type: decimal;
 .big {
 font-size: 20px;
 line-height: 34px;
+}
+
+.member-button {
+background: #902927;
+height: 50px;
+line-height: 50px;
+width: 165px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+color: #fff;
+font-weight: bold;
+font-size: 16px;
+text-transform: uppercase;
+text-align: center;
+margin: 0 auto;
+}
+
+.member-button a, 
+a.member-button {
+color: #fff;
+}
+
+.round-box {
+border: 1px solid #04cecc;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.4);
+padding: 20px;
 }
 
 /* LAYOUT */
