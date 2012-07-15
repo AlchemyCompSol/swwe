@@ -3,7 +3,7 @@ Theme Name: SWWE
 Theme URI: http://nathanstaines.com
 Description: Based on Starkers HTML5 by Nathan Staines
 Version: 1
-Author: Morgan Kay, Sarah Rowe
+Author: Morgan Kay, Sarah Rowe, Erin Anacker
 Author URI: http://alchemycs.com
 */
 
@@ -274,9 +274,15 @@ font-family: 'Trebuchet MS',  Trebuchet, Helvetica, sans-serif;
 font-size: 16px;
 }
 
+/* VENDER PROFILE */
+/* ----------------------------------------- */
+.base h4 {
+	display: none;
+}
+
+
 /* BLOG */
 /* ----------------------------------------- */
-
 
 
 
