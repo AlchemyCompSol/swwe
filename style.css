@@ -15,21 +15,31 @@ Author URI: http://alchemycs.com
 /* GENERAL  */
 /* ----------------------------------------- */
 
-#top,
-#container,
-#bottom {
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+background: url('http://theclementinegroup.com/wp-content/themes/swwe/images/background.jpg');;
+}
+
+#container {
 width: 1000px;
 margin: 0 auto;
-clear: both;
+background: #fff;
+padding: 40px;
 }
 
 #content {
-width: 750px;
+width: 700px;
 float: left;
 }
 
 #sidebar {
-width: 250px;
+width: 200px;
 float: right;
 }
 
@@ -38,14 +48,79 @@ float: right;
 /* HEADER */
 /* ----------------------------------------- */
 
+#top {
+height: 200px;
+}
+
+#top hgroup {
+width: 1000px;
+margin: 0 auto;
+background: #fff;
+height: 165px;
+position: relative;
+}
+
+#top h1 a {
+display: block;
+background: url('http://theclementinegroup.com/wp-content/themes/swwe/images/logo.png') no-repeat;
+height: 103px;
+width: 480px;
+margin-top: 40px;
+margin-left: 20px;
+}
+
+#top h1,
+#top h2 {
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+
+#top #header-widgets {
+position: absolute;
+top: 20px;
+right: 20px;
+}
+
+
 
 
 
 /* NAVIGATION */
 /* ----------------------------------------- */
 
+#top nav {
+width: 100%;
+background: #fff;
+height: 35px;
+line-height: 35px;
+border: 1px solid #04cecc;
+position: relative;
+}
+
 nav li {
 display: inline;
+padding-right: 20px;
+}
+
+nav ul {
+width: 960px;
+margin: 0 auto;
+}
+
+nav a {
+font-weight: bold;
+text-decoration: none;
+color: #737a77;
+text-transform: uppercase;
+}
+
+nav .menu-secondary-nav-container {
+width: 960px;
+margin: 0 auto;
+text-align: right;
+position: relative;
+top: -35px;
 }
 
 
@@ -73,3 +148,9 @@ display: inline;
 
 /* FOOTER */
 /* ----------------------------------------- */
+
+#bottom {
+clear: both;
+width: 1000px;
+margin: 0 auto;
+}

@@ -39,6 +39,7 @@ function starkers_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Navigation', 'starkers' ),
+		'secondary' => __( 'Secondary Navigation', 'starkers' ),
 	) );
 }
 endif;
@@ -154,11 +155,11 @@ add_filter('comment_form_default_fields','starkers_fields');
 function starkers_widgets_init() {
 	// Area 1, located at the top of the sidebar.
 	register_sidebar( array(
-		'name' => __( 'Primary Widget Area', 'starkers' ),
-		'id' => 'primary-widget-area',
-		'description' => __( 'The primary widget area', 'starkers' ),
-		'before_widget' => '<li>',
-		'after_widget' => '</li>',
+		'name' => __( 'Header Widget Area', 'starkers' ),
+		'id' => 'header-widget-area',
+		'description' => __( 'The header widget area for social media buttons', 'starkers' ),
+		'before_widget' => '<div id="header-widgets">',
+		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );
