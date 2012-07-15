@@ -1,6 +1,7 @@
 body, 
 .wp-editor {
 font-family: 'Trebuchet MS',  Trebuchet, Helvetica, sans-serif;
+color: #737a77;
 }
 
 p {
@@ -39,6 +40,7 @@ margin-bottom: 12px;
 }
 
 a {
+color: #EA8023;	
 text-decoration: none;
 }
 
@@ -78,6 +80,10 @@ ol li {
 list-style-type: decimal;
 }
 
+.big {
+font-size: 20px;
+line-height: 34px;
+}
 
 /* LAYOUT */
 /* ----------------------------------------- */
